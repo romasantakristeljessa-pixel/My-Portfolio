@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,6 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
-    /* Background Image with dark overlay */
     body, html {
       margin: 0;
       padding: 0;
@@ -22,7 +20,6 @@
       overflow-x: hidden;
     }
 
-    /* Navbar */
     nav {
       position: fixed;
       top: 0;
@@ -53,7 +50,6 @@
       padding-bottom: 3px;
     }
 
-    /* Container with glassmorphism */
     .container {
       max-width: 900px;
       background: rgba(255, 255, 255, 0.15);
@@ -69,7 +65,6 @@
       position: relative;
     }
 
-    /* Profile Picture */
     #profile-pic-section {
       text-align: center;
       margin-bottom: 40px;
@@ -90,7 +85,6 @@
       cursor: pointer;
     }
 
-    /* Headings */
     h1, h2 {
       margin-top: 0;
       font-weight: 700;
@@ -112,14 +106,12 @@
       text-transform: uppercase;
     }
 
-    /* Paragraph */
     p {
       font-size: 1.1rem;
       line-height: 1.6;
       color: #dbe9ff;
     }
 
-    /* Lists */
     ul {
       list-style: none;
       padding-left: 0;
@@ -140,7 +132,6 @@
       cursor: default;
     }
 
-    /* Project card */
     .project {
       background: rgba(96, 165, 250, 0.15);
       padding: 25px 30px;
@@ -169,7 +160,6 @@
       margin-bottom: 15px;
     }
 
-    /* Contact */
     a {
       color: #60a5fa;
       text-decoration: none;
@@ -192,7 +182,6 @@
       margin-top: 60px;
     }
 
-    /* Hide all sections except active */
     section {
       display: none;
       opacity: 0;
@@ -210,7 +199,6 @@
       opacity: 1;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       .container {
         padding: 30px 25px;
@@ -252,7 +240,7 @@
     
     <section id="about" class="active">
       <div id="profile-pic-section">
-        <img src="C:/Users/asus/Untitled design.jpg" alt="Kristel Jessa Romasanta Profile Picture" />
+        <img src="My-Portfolio/Untitled design.jpg" alt="Kristel Jessa Romasanta Profile Picture" />
       </div>
       <h1>Kristel Jessa Romasanta</h1>
       <p><em>Basic Programmer & Database Developer</em></p>
@@ -310,22 +298,17 @@
   </footer>
 
   <script>
-    // Navigation switching logic
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('.container section');
 
     navLinks.forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
-
-        // Remove active from all nav links
         navLinks.forEach(l => l.classList.remove('active'));
-        // Add active to clicked nav link
         link.classList.add('active');
 
         const targetSection = link.getAttribute('data-section');
 
-        // Hide all sections and show the target section
         sections.forEach(section => {
           if (section.id === targetSection) {
             section.classList.add('active');
@@ -334,13 +317,10 @@
           }
         });
 
-        // Scroll top inside container on switch
         document.querySelector('.container').scrollTop = 0;
       });
     });
   </script>
 </body>
 </html>
-profile.html
 
-Displaying profile.html.
