@@ -240,7 +240,7 @@
     
     <section id="about" class="active">
       <div id="profile-pic-section">
-        <img src="My-Portfolio/Untitled design.jpg" alt="Kristel Jessa Romasanta Profile Picture" />
+        <img src="Untitled design.jpg" alt="Kristel Jessa Romasanta Profile Picture" />
       </div>
       <h1>Kristel Jessa Romasanta</h1>
       <p><em>Basic Programmer & Database Developer</em></p>
